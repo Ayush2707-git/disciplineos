@@ -3,11 +3,18 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
+interface HeatmapData {
+  date: string;
+  score: number;
+  week: number;
+  day: number;
+}
+
 // Helper to generate fake heatmap data
-function generateHeatmap() {
+function generateHeatmap(): HeatmapData[] {
   const weeks = 13;
   const days = 7;
-  const data = [];
+  const data: HeatmapData[] = [];
   
   const today = new Date();
   
@@ -39,11 +46,11 @@ function generateHeatmap() {
 }
 
 export default function ProgressPage() {
-  const [heatmap, setHeatmap] = useState<any[]>([]);
+  const [heatmap] = useState<HeatmapData[]>(() => generateHeatmap());
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setHeatmap(generateHeatmap());
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 

@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from 'react';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Compass, Clock, ShieldAlert, Target, ArrowRight, CheckCircle2, Circle, Loader2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { completeLeverageAction } from '@/app/actions/user';
@@ -143,7 +143,7 @@ export default function CompassDashboard() {
           <motion.section variants={itemVariants}>
             <div className="flex items-center gap-2 mb-4">
               <Target className="w-5 h-5 text-emerald-500" />
-              <h2 className="text-lg font-bold text-white tracking-tight">Today's Leverage Action</h2>
+              <h2 className="text-lg font-bold text-white tracking-tight">Today&apos;s Leverage Action</h2>
             </div>
             
             <motion.div 

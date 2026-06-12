@@ -3,7 +3,7 @@
 import { useState, useTransition } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
-import { ArrowRight, Brain, ShieldCheck, Rocket, BookOpen, GraduationCap, Coins, Book, Loader2 } from 'lucide-react';
+import { ArrowRight, Brain, ShieldCheck, Rocket, GraduationCap, Coins, Book, Loader2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { setupIdentity } from '@/app/actions/user';
 

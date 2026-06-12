@@ -1,10 +1,9 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue, Variants } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowRight, Compass, Activity, Brain, Clock, ShieldAlert, GitMerge } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { ArrowRight, Compass, Clock, ShieldAlert, GitMerge } from 'lucide-react';
 
 // --- Subcomponents for Cinematic Effects ---
 

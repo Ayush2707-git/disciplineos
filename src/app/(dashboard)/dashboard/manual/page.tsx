@@ -79,7 +79,7 @@ export default function OperatingManualPage() {
             <div className="text-xs font-bold text-emerald-500 uppercase tracking-wider mb-1">Optimal Recovery Protocol</div>
             <div className="text-2xl font-bold text-white mb-2">{DEMO_OPERATING_MANUAL.bestRecovery}</div>
             <p className="text-sm text-emerald-100/70">
-              When focus drops below 40%, do not attempt to "push through." Execute this protocol.
+              When focus drops below 40%, do not attempt to &quot;push through.&quot; Execute this protocol.
             </p>
           </div>
         </motion.div>
